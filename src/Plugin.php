@@ -34,7 +34,7 @@ class Plugin extends AbstractPlugin
     {
         return array(
             'command.thefuckingweather' => 'handleCommand',
-            'command.thefuckingweather.help' => 'handleHelp',
+            // 'command.thefuckingweather.help' => 'handleHelp',
         );
     }
 
