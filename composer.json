@@ -1,0 +1,31 @@
+{
+    "name": "phergie/phergie-irc-plugin-react-thefuckingweather",
+    "description": "Phergie plugin for providing weather information from thefuckingweather.com",
+    "keywords": [ "irc", "bot", "react", "plugin" ],
+    "license": "BSD-2-Clause",
+    "support": {
+        "email": "team@phergie.org",
+        "irc": "irc://irc.freenode.net/phergie",
+        "issues": "https://github.com/phergie/phergie-irc-plugin-react-thefuckingweather/issues",
+        "source": "https://github.com/phergie/phergie-irc-plugin-react-thefuckingweather"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "phergie/phergie-irc-bot-react": "dev-master",
+        "phergie/phergie-irc-plugin-react-command": "dev-master",
+        "wyrihaximus/phergie-http": "dev-master"
+
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.1.*",
+        "phake/phake": "2.0.0-beta1"
+    },
+    "suggest": {
+        "phergie/phergie-irc-plugin-react-commandhelp": "provides interactive help for commands"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phergie\\Irc\\Plugin\\React\\TheFuckingWeather\\": "src"
+        }
+    }
+}
