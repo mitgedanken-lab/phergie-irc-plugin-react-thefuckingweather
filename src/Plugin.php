@@ -98,7 +98,7 @@ class Plugin extends AbstractPlugin
     {
         preg_match_all(
             '#<div><span class="small">(.*?)<\/span><\/div>#im',
-            $content,
+            $data,
             $matches
         );
         $location = $matches[1][0];
@@ -109,7 +109,7 @@ class Plugin extends AbstractPlugin
 
         preg_match_all(
             '#<div class="large" >(.*?)<br \/>#im',
-            $content,
+            $data,
             $matches
         );
         $numbers = (int) $matches[1][0];
@@ -117,14 +117,14 @@ class Plugin extends AbstractPlugin
 
         preg_match_all(
             '#<br \/>(.*?)<\/div><div  id="remark"><br \/>#im',
-            $content,
+            $data,
             $matches
         );
         $description = $matches[1][0];
 
         preg_match_all(
             '#<div  id="remark"><br \/>\n<span>(.*?)<\/span><\/div>#im',
-            $content,
+            $data,
             $matches
         );
         $remark = $matches[1][0];
