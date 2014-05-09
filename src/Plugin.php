@@ -34,7 +34,7 @@ class Plugin extends AbstractPlugin
     {
         return array(
             'command.thefuckingweather' => 'handleCommand',
-            // 'command.thefuckingweather.help' => 'handleHelp',
+            'command.thefuckingweather.help' => 'handleHelp',
         );
     }
 
@@ -96,42 +96,65 @@ class Plugin extends AbstractPlugin
      */
     protected function getResponse($data)
     {
-        preg_match_all(
-            '#<div><span class="small">(.*?)<\/span><\/div>#im',
-            $data,
-            $matches
-        );
-        $location = $matches[1][0];
+        $doc = new \DOMDocument;
+        $doc->loadHTML($data);
+        $xpath = new \DOMXPath($doc);
 
-        if (empty($location)) {
-            return 'No fucking clue where that is.';
+        $location = trim($xpath->query('//span[@id="locationDisplaySpan"]')->item(0)->nodeValue);
+        if (!$location) {
+            return 'I CAN\'T FIND THAT SHIT.';
         }
 
-        preg_match_all(
-            '#<div class="large" >(.*?)<br \/>#im',
-            $data,
-            $matches
-        );
-        $numbers = (int) $matches[1][0];
-        $numbers .= ' F / ' . round(($numbers - 32) / 1.8, 0) . ' C?!';
+        $result = $xpath->query('//span[@class="temperature"]');
+        $element = $result->item(0);
+        $tempF = $element->getAttribute('tempf');
+        $tempC = $element->nodeValue;
+        if ($tempF == $tempC) {
+            $tempC = round(($tempF - 32) / 1.8, 0);
+        }
+        $numbers = "$tempF F / $tempC C ?!";
 
-        preg_match_all(
-            '#<br \/>(.*?)<\/div><div  id="remark"><br \/>#im',
-            $data,
-            $matches
-        );
-        $description = $matches[1][0];
+        $remark = $xpath->query('//p[@class="remark"]')->item(0)->nodeValue;
 
-        preg_match_all(
-            '#<div  id="remark"><br \/>\n<span>(.*?)<\/span><\/div>#im',
-            $data,
-            $matches
-        );
-        $remark = $matches[1][0];
+        $flavor = $xpath->query('//p[@class="flavor"]')->item(0)->nodeValue;
 
-        $result = "{$location}: {$numbers} {$description} ({$remark})";
-        $result = str_replace('<', ' <', $result);
-        $result = strip_tags($result);
-        return html_entity_decode($result);
+        $result = "{$location}: $numbers {$remark}. $flavor";
+        return $result;
+    }
+
+    /**
+     * Handles a failed request for weather information.
+     *
+     * @param \Phergie\Irc\Plugin\React\Command\CommandEvent $event
+     * @param \Phergie\Irc\Bot\React\EventQueueInterface $queue
+     */
+    public function reject(Event $event, Queue $queue)
+    {
+        $target = $event->getSource();
+        $nick = $event->getNick();
+        $response = 'I CAN\'T GET THE FUCKING WEATHER.';
+        if ($target != $nick) {
+            $response = $nick . ': ' . $response;
+        }
+        $queue->ircPrivmsg($target, $response);
+    }
+
+    /**
+     * Returns usage information for the command.
+     *
+     * @param \Phergie\Irc\Plugin\React\Command\CommandEvent $event
+     * @param \Phergie\Irc\Bot\React\EventQueueInterface $queue
+     */
+    public function handleHelp(Event $event, Queue $queue)
+    {
+        $method = 'irc' . $event->getCommand();
+        $target = $event->getSource();
+        $messages = array(
+            'Usage: thefuckingweather location',
+            'Returns weather information for the specified location from thefuckingweather.com',
+        );
+        foreach ($messages as $message) {
+            $queue->$method($target, $message);
+        }
     }
 }

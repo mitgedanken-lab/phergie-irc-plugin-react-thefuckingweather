@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "9219df6e510cd2b9fae27145358fc027",
+    "hash": "7fcd4d3d039a6bf6acf38710e2f777ad",
     "packages": [
         {
             "name": "evenement/evenement",
@@ -819,12 +819,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/PhergieHttp.git",
-                "reference": "6d4a3d9dbc3239a74975927c10fbfd58a8e62b5f"
+                "reference": "525aacab377b34f01c5f91655070f47537ea4a85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/PhergieHttp/zipball/6d4a3d9dbc3239a74975927c10fbfd58a8e62b5f",
-                "reference": "6d4a3d9dbc3239a74975927c10fbfd58a8e62b5f",
+                "url": "https://api.github.com/repos/WyriHaximus/PhergieHttp/zipball/525aacab377b34f01c5f91655070f47537ea4a85",
+                "reference": "525aacab377b34f01c5f91655070f47537ea4a85",
                 "shasum": ""
             },
             "require": {
@@ -854,22 +854,22 @@
                 "plugin",
                 "react"
             ],
-            "time": "2014-05-06 21:40:12"
+            "time": "2014-05-08 19:34:08"
         }
     ],
     "packages-dev": [
         {
             "name": "phake/phake",
-            "version": "v2.0.0-beta1",
+            "version": "v2.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mlively/Phake.git",
-                "reference": "d9732d7d1ffc65e86856e00eca5f3025b3f29442"
+                "reference": "917a5d1e426548ead7910a8cb89336cd8641eba7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mlively/Phake/zipball/d9732d7d1ffc65e86856e00eca5f3025b3f29442",
-                "reference": "d9732d7d1ffc65e86856e00eca5f3025b3f29442",
+                "url": "https://api.github.com/repos/mlively/Phake/zipball/917a5d1e426548ead7910a8cb89336cd8641eba7",
+                "reference": "917a5d1e426548ead7910a8cb89336cd8641eba7",
                 "shasum": ""
             },
             "require": {
@@ -912,7 +912,7 @@
                 "mock",
                 "testing"
             ],
-            "time": "2014-04-19 19:26:56"
+            "time": "2014-05-05 14:08:12"
         },
         {
             "name": "phpunit/php-code-coverage",

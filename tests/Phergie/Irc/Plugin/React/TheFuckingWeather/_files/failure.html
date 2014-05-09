@@ -1,0 +1,107 @@
+
+
+<!DOCTYPE html>
+<html>
+<head><title>
+	THE FUCKING WEATHER
+</title><meta http-equiv="Content-Language" content="en-us" />
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	
+	<link href="Styles/Styles.css" rel="stylesheet" type="text/css" /><script src="/Script/DefaultScript.js" type="text/javascript"></script><script src="/Script/BlockUi.js" type="text/javascript"></script><script src="/Script/spin.min.js" type="text/javascript"></script>
+<link href="https://s3.amazonaws.com/TheFuckingWeather/Images/favicon.ico" rel="icon" /><link href="Styles/Global.css" rel="stylesheet" type="text/css" /><link href="http://fonts.googleapis.com/css?family=Ledger" rel="stylesheet" type="text/css" /><script id="googleAnalytics" type="text/javascript">
+	var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-4722534-2']);
+_gaq.push(['_setDomainName', 'thefuckingweather.com']);
+_gaq.push(['_trackPageview']);
+(function () {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+</script></head>
+<body>
+	<noscript><div>JAVASCRIPT IS FUCKING REQUIRED.</div></noscript>
+	
+	
+	<div id="fb-root"></div>
+	<script>(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+			fjs.parentNode.insertBefore(js, fjs);
+		} (document, 'script', 'facebook-jssdk'));</script>
+
+	<form method="post" action="?where=adadasadasdaas&amp;unit=c" id="ctl00">
+<div class="aspNetHidden">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTY4OTU0OTMxNA9kFgJmD2QWAmYPZBYCAgEPZBYCAgQPD2QWAh4EdHlwZQUPdGV4dC9qYXZhc2NyaXB0ZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQU/Y3RsMDAkY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyJENvbnRlbnRQbGFjZUhvbGRlciRjdGwwMSRjZWxzaXVzXbiQjXJzWqGCzRsIN+aou9PqMjA=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['ctl00'];
+if (!theForm) {
+    theForm = document.ctl00;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=k8J13Xx8x1wadkqsA5PuNshXr0wdTsLdOsMD4XWH-dVMgJ5dhQ2LZg_Pf9oyTtSr2tiRCjQ38-zUVTlvlQBdTAPAv-M1&amp;t=635327076092285000" type="text/javascript"></script>
+
+
+<script src="/WebResource.axd?d=y8VkfGn8fv92MkChHqLvujcxur1QnbxuqGMUauA0yBvodA8JLaJreCu25gq7BPMPDISJB20OoNKaBX3ekLk1n_-0ao41&amp;t=635327076092285000" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBQK6286eAwKT9oKiDwKw3oLvAwKmjZ3iDQLkrcS4BWeZT0Lo+/ylmkOiQl8+BLdjxaHF" />
+</div>
+		
+	<div class="bodyDiv">
+	<div>
+		<div style="float: left;"><span id="locationDisplaySpan" class="small"></span></div>
+		<div id="socialSideBar" class="social">
+			<div id="fbLike" class="fb-like" data-href="http://www.facebook.com/THEFINGWEATHER" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false" data-font="segoe ui"></div>
+		</div>
+	</div>
+	<div class="content">
+		<p class="large">I CAN&#39;T FIND THAT SHIT</p>
+		<table id="inputArea" class="formTable">
+	<tr class="locationRow">
+		<td>WHERE?<input name="ctl00$ctl00$ContentPlaceHolder$ContentPlaceHolder$ctl01$location" type="text" id="location" /><input type="submit" name="ctl00$ctl00$ContentPlaceHolder$ContentPlaceHolder$ctl01$fuckingweather" value="FUCKING WEATHER" id="fuckingweather" /></td>
+	</tr><tr class="randomLocationRow">
+		<td>GIVE ME A <input type="button" name="ctl00$ctl00$ContentPlaceHolder$ContentPlaceHolder$ctl01$randomlocation" value="RANDOM FUCKING LOCATION" onclick="javascript:__doPostBack(&#39;ctl00$ctl00$ContentPlaceHolder$ContentPlaceHolder$ctl01$randomlocation&#39;,&#39;&#39;)" id="randomlocation" /></td>
+	</tr><tr>
+		<td><input id="celsius" type="checkbox" name="ctl00$ctl00$ContentPlaceHolder$ContentPlaceHolder$ctl01$celsius" checked="checked" onchange="checkChanged(this)" /><label for="celsius">I WANT FUCKING CELSIUS</label></td>
+	</tr>
+</table>
+		
+		
+		<div style="width:500px;margin:0 auto;text-align:center;">
+	<a class="earthshod" href="http://www.earthshod.com" target="_blank">ASK A FORTUNE TELLER ABOUT YOUR CLOUDY FUCKING CAREER PATH!</a>
+</div>
+	</div>
+	<div class="footer"><a href="HelpThisGuy.aspx">HAPPY APRIL</a></div>
+	</div>
+
+	
+
+<script type="text/javascript">
+//<![CDATA[
+WebForm_AutoFocus('location');//]]>
+</script>
+</form>
+
+</body>
+</html>
