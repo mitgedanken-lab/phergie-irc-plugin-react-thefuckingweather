@@ -13,6 +13,7 @@ namespace Phergie\Irc\Plugin\React\TheFuckingWeather;
 use Phergie\Irc\Bot\React\AbstractPlugin;
 use Phergie\Irc\Bot\React\EventQueueInterface as Queue;
 use Phergie\Irc\Plugin\React\Command\CommandEvent as Event;
+use PhpUnitsOfMeasure\PhysicalQuantity\Temperature;
 use WyriHaximus\Phergie\Plugin\Http\Request as HttpRequest;
 
 /**
@@ -110,7 +111,8 @@ class Plugin extends AbstractPlugin
         $tempF = $element->getAttribute('tempf');
         $tempC = $element->nodeValue;
         if ($tempF == $tempC) {
-            $tempC = round(($tempF - 32) / 1.8, 0);
+            $temp = new Temperature($tempC, 'F');
+            $tempC = round($temp->toUnit('C'), 0);
         }
         $numbers = "$tempF F / $tempC C ?!";
 

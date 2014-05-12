@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "7fcd4d3d039a6bf6acf38710e2f777ad",
+    "hash": "285d90046f53dd0e99675ba10f48e845",
     "packages": [
         {
             "name": "evenement/evenement",
@@ -204,12 +204,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phergie/phergie-irc-client-react.git",
-                "reference": "3f7b72f252e503eb4fd1ed5549e39c0082b8d3c0"
+                "reference": "94bed8905545c60b644b495a0bf976db54859791"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phergie/phergie-irc-client-react/zipball/3f7b72f252e503eb4fd1ed5549e39c0082b8d3c0",
-                "reference": "3f7b72f252e503eb4fd1ed5549e39c0082b8d3c0",
+                "url": "https://api.github.com/repos/phergie/phergie-irc-client-react/zipball/94bed8905545c60b644b495a0bf976db54859791",
+                "reference": "94bed8905545c60b644b495a0bf976db54859791",
                 "shasum": ""
             },
             "require": {
@@ -242,7 +242,7 @@
                 "irc",
                 "react"
             ],
-            "time": "2014-05-07 01:40:37"
+            "time": "2014-05-11 21:04:53"
         },
         {
             "name": "phergie/phergie-irc-connection",
@@ -814,17 +814,65 @@
             "time": "2013-07-09 00:44:12"
         },
         {
+            "name": "triplepoint/php-units-of-measure",
+            "version": "v1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/triplepoint/php-units-of-measure.git",
+                "reference": "63ddb6969bfde9a0d0039c95048453dcb6d5e433"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/triplepoint/php-units-of-measure/zipball/63ddb6969bfde9a0d0039c95048453dcb6d5e433",
+                "reference": "63ddb6969bfde9a0d0039c95048453dcb6d5e433",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "squizlabs/php_codesniffer": "1.4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "PhpUnitsOfMeasure": "source/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Hanson",
+                    "email": "jonathan@jonathan-hanson.org",
+                    "homepage": "http://www.jonathan-hanson.org/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A PHP library for converting between standard units of measure.",
+            "homepage": "https://github.com/triplepoint/php-units-of-measure",
+            "keywords": [
+                "conversion",
+                "data",
+                "measurements"
+            ],
+            "time": "2014-02-10 00:05:32"
+        },
+        {
             "name": "wyrihaximus/phergie-http",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/PhergieHttp.git",
-                "reference": "525aacab377b34f01c5f91655070f47537ea4a85"
+                "reference": "61185dd5ecf2e7d04fae220de6af1ae0bf4bb0a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/PhergieHttp/zipball/525aacab377b34f01c5f91655070f47537ea4a85",
-                "reference": "525aacab377b34f01c5f91655070f47537ea4a85",
+                "url": "https://api.github.com/repos/WyriHaximus/PhergieHttp/zipball/61185dd5ecf2e7d04fae220de6af1ae0bf4bb0a1",
+                "reference": "61185dd5ecf2e7d04fae220de6af1ae0bf4bb0a1",
                 "shasum": ""
             },
             "require": {
@@ -854,7 +902,7 @@
                 "plugin",
                 "react"
             ],
-            "time": "2014-05-08 19:34:08"
+            "time": "2014-05-10 21:01:58"
         }
     ],
     "packages-dev": [
@@ -1242,12 +1290,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "bbc1aa16d02273790a2106e3385cc0efeb6a18cb"
+                "reference": "4dada9d8762055e292d79142adbdde56c113b21a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/bbc1aa16d02273790a2106e3385cc0efeb6a18cb",
-                "reference": "bbc1aa16d02273790a2106e3385cc0efeb6a18cb",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/4dada9d8762055e292d79142adbdde56c113b21a",
+                "reference": "4dada9d8762055e292d79142adbdde56c113b21a",
                 "shasum": ""
             },
             "require": {
@@ -1291,7 +1339,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2014-05-04 09:39:30"
+            "time": "2014-05-09 09:09:30"
         },
         {
             "name": "sebastian/comparator",
@@ -1299,12 +1347,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "9acfeaa92132325252efd9e973cd47e157d4c773"
+                "reference": "e54a01c0da1b87db3c5a3c4c5277ddf331da4aef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/9acfeaa92132325252efd9e973cd47e157d4c773",
-                "reference": "9acfeaa92132325252efd9e973cd47e157d4c773",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/e54a01c0da1b87db3c5a3c4c5277ddf331da4aef",
+                "reference": "e54a01c0da1b87db3c5a3c4c5277ddf331da4aef",
                 "shasum": ""
             },
             "require": {
@@ -1356,7 +1404,7 @@
                 "compare",
                 "equality"
             ],
-            "time": "2014-05-04 09:14:18"
+            "time": "2014-05-11 23:00:21"
         },
         {
             "name": "sebastian/diff",
@@ -1364,12 +1412,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "10a9cd901c6878378482b0191618faf50e701732"
+                "reference": "684fe22b1549ad103a0ad8934defefda63527d0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/10a9cd901c6878378482b0191618faf50e701732",
-                "reference": "10a9cd901c6878378482b0191618faf50e701732",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/684fe22b1549ad103a0ad8934defefda63527d0d",
+                "reference": "684fe22b1549ad103a0ad8934defefda63527d0d",
                 "shasum": ""
             },
             "require": {
@@ -1406,7 +1454,7 @@
             "keywords": [
                 "diff"
             ],
-            "time": "2014-05-07 06:57:00"
+            "time": "2014-05-11 05:24:06"
         },
         {
             "name": "sebastian/environment",
