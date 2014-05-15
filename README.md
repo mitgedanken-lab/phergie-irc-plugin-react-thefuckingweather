@@ -21,13 +21,7 @@ See Phergie documentation for more information on
 
 ## Configuration
 
-```php
-new \Phergie\Irc\Plugin\React\TheFuckingWeather\Plugin(array(
-
-
-
-))
-```
+This plugin has no configuration.
 
 ## Tests
 
