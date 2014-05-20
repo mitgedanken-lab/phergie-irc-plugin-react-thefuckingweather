@@ -21,7 +21,18 @@ See Phergie documentation for more information on
 
 ## Configuration
 
-This plugin has no configuration.
+This plugin has no configuration, but does require the Http plugin.
+
+```php
+return array(
+    'plugins' => array(
+        // dependency
+        new \WyriHaximus\Phergie\Plugin\Http\Plugin,
+
+        new \Phergie\Irc\Plugin\React\TheFuckingWeather,
+    )
+);
+```
 
 ## Tests
 
