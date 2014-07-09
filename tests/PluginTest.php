@@ -8,11 +8,12 @@
  * @package Phergie\Irc\Plugin\React\TheFuckingWeather
  */
 
-namespace Phergie\Irc\Plugin\React\TheFuckingWeather;
+namespace Phergie\Irc\Tests\Plugin\React\TheFuckingWeather;
 
 use Phake;
-use Phergie\Irc\Plugin\React\Command\CommandEvent;
 use Phergie\Irc\Bot\React\EventQueueInterface;
+use Phergie\Irc\Plugin\React\Command\CommandEvent;
+use Phergie\Irc\Plugin\React\TheFuckingWeather\Plugin;
 
 /**
  * Tests for the Plugin class.
