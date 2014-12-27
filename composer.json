@@ -11,9 +11,9 @@
     },
     "minimum-stability": "dev",
     "require": {
-        "phergie/phergie-irc-bot-react": "dev-master",
-        "phergie/phergie-irc-plugin-react-command": "dev-master",
-        "triplepoint/php-units-of-measure": "1.1.*",
+        "phergie/phergie-irc-bot-react": "~1",
+        "phergie/phergie-irc-plugin-react-command": "~1",
+        "triplepoint/php-units-of-measure": "~1",
         "wyrihaximus/phergie-http": "dev-master"
     },
     "require-dev": {
