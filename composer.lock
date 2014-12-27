@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f62f4b092132832677e3329ec8aa88d9",
+    "hash": "4e6a7c693f9be93a4d53683ee97aac1d",
     "packages": [
         {
             "name": "evenement/evenement",
@@ -931,7 +931,7 @@
         },
         {
             "name": "wyrihaximus/phergie-http",
-            "version": "dev-master",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/PhergieHttp.git",
@@ -1727,9 +1727,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "wyrihaximus/phergie-http": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
