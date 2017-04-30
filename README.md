@@ -8,12 +8,8 @@
 
 The recommended method of installation is [through composer](http://getcomposer.org).
 
-```JSON
-{
-    "require": {
-        "phergie/phergie-irc-plugin-react-thefuckingweather": "dev-master"
-    }
-}
+```
+composer require phergie/phergie-irc-plugin-react-thefuckingweather
 ```
 
 See Phergie documentation for more information on
